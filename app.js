@@ -1,6 +1,7 @@
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
 /*

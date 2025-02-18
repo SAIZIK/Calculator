@@ -1,0 +1,282 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: clac;
+    src: url(../Font/digital_7/digital-7.ttf);
+}
+
+main
+{
+    max-width: 100%;
+    height: 100vh;
+    background-color: #ffd900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.name
+{
+    min-width: 30%;
+    height: 40%;
+    /* background-color: #808080; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: sans-serif;
+    position: absolute;
+    left: 5%;
+}
+.name2
+{
+    min-width: 30%;
+    height: 40%;
+    /* background-color: #808080; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: sans-serif;
+    position: absolute;
+    left: 65%;
+}
+    .name h1, .name2 h1
+    {
+        color: #ffffff;
+        /* background-color: #ff0303; */
+        font-size: 3em;
+        font-weight: bold;
+        font-style: italic;
+        /* font-family: deca; */
+    }
+        .name .black, .name2 .black
+        {
+            color: #00000013;
+            position: absolute;
+            top: 45%;
+            left: 28%;
+        }
+        .name .white, .name2 .white
+        {
+            color: #ffffff;
+            z-index: 999;
+        }
+        .name .grey, .name2 .grey
+        {
+            color: #cfcece;
+            z-index: 9;
+            position: absolute;
+            top: 40.5%;
+            left: 22.5%;
+        }
+.threeD
+{
+    width: 22%;
+    height: 75%;
+    background-color: #000000;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    position: absolute;
+}
+.calculator
+{
+    width: 97%;
+    height: 98%;
+    background-color: #1b1b1b;
+    /* margin: 0 20px;   */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    /* box-shadow: 10px 10px 20px rgb(0, 0, 0); */
+}
+    .contain
+    {
+        width: 80%;
+        height: 15%;
+        background-color: #9eb17b;
+        margin: 40px 0 20px 0;
+        /* padding: 10px 20px; */
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .shadow
+    {
+        width: 100%;
+        height: 100%;
+        background-color: #0000002f;
+        /* margin: 40px 0 20px 0; */
+        /* padding: 10px 20px; */
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .output
+    {
+        width: 97%;
+        height: 90%;
+        background-color: #9eb17b;   
+        font-size: 2.2rem;
+        /* margin: 40px 0 20px 0; */
+        padding: 10px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        overflow-x: scroll;
+        font-family: clac;
+        /* font-weight: bold; */
+    }
+    .output::-webkit-scrollbar {
+        height: 4px;
+        /* background-color: #333; */
+      }
+      
+      .output::-webkit-scrollbar-thumb {
+        background-color: #666;
+        border-radius: 20px;
+      }
+      
+      .output::-webkit-scrollbar-thumb:hover {
+        background-color: #888;
+      }
+      
+      .output::-webkit-scrollbar-track {
+        /* background-color: #444; */
+        border-radius: 20px;
+        margin-block: .5rem;
+      }
+    .buttons
+    {
+        width: 90%;
+        height: 70%;
+        /* background-color: #e02f2f; */
+        display: grid;
+        grid-template-columns: repeat(4,24%);
+        /* grid-row-gap: 5px; */
+        /* grid-template-rows: repeat(4,1%); */
+        place-items: center;
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+    .button3d
+    {
+        width: 55px;
+        height: 55px;
+        /* background-color: #2b2a2a; */
+        border: none;
+        /* font-size: 1.5em;  */
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 6px 6px 15px rgb(0, 0, 0);
+    }
+    .button3d:hover
+    {
+        background-color: #2b2a2a00;
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0);
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .orange
+    {
+        background-color: #a86d00;
+    }
+    .buttons button
+    {
+        width: 95%;
+        height: 96%;
+        background-color: #4d4d4d;
+        border: none;
+        font-size: 1.5em; 
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .buttons .number:hover
+    {
+        background-color: #646464;
+        /* transform: scale(0.9); */
+    }
+    .buttons .operator
+    {
+        background-color: #ffa600;
+        color: #000000;
+    }
+    .buttons .eq
+    {
+        background-color: #ffa600;
+        color: #000000;
+    }
+    .buttons .operator:hover, .eq:hover
+    {
+        background-color: #ffbe45;
+    }
+    .delete
+    {
+        width: 90%;
+        height: 10%;
+        /* background-color: #550404; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    .delete3d
+    {
+        width: 42%;
+        height: 60px;
+        background-color: #a86d00;
+        border: none;
+        font-weight: bold;
+        color: #000000;
+        border-radius: 10px;
+        cursor: pointer;  
+        box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    }
+    .delete3d:hover
+    {
+        background-color: #2b2a2a00;
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0);
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .delete button
+    {
+        width: 97%;
+        height: 95%;
+        background-color: #ffa600;
+        border: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #000000;
+        border-radius: 10px;
+        cursor: pointer;  
+        /* box-shadow: 10px 10px 20px rgb(0, 0, 0); */
+
+    }
+    .delete button:hover
+    {
+        background-color: #fab32e;
+    }

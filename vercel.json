@@ -1,15 +1,5 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "Calculator.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/Calculator.html"
-      }
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/" }
     ]
   }
